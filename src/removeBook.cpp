@@ -9,6 +9,6 @@ void removeBook() {
     books.erase(std::remove_if(books.begin(), books.end(),
                                [&isbn](const Book &b) { return b.isbn == isbn; }),
                 books.end());
-
+;
     std::cout << "Book removed successfully (if it was present).\n";
 }
